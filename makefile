@@ -1,0 +1,1 @@
+g++ -I "G:\boost_1_72_0" perrer.cpp -lwsock32 -lws2_32 -o perrer.exe --std=c++11
