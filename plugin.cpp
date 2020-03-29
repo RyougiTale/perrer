@@ -1,3 +1,5 @@
+// 网上找的源码，侵删
+
 ///////////////////////////////////////////////////
 // 文    件: FindProcessModuleAddress.c
 // 描    述: 获取指定进程指定模块基址
@@ -297,16 +299,3 @@ void plugin_get(DWORD &processid, unsigned int &address_base)
     enum_process(CharToWchar("frame.exe"), CharToWchar("ChatClient.dll"), processid, address_base);
     //cout << "error_result" << endl;
 }
-
-//int main()
-//{
-//    if (enable_debug_priv() != YSUCCESS)
-//    {
-//        cout << "error_enable_debug" << endl;
-//        return 0;
-//    }
-//    DWORD processid;
-//    unsigned int address_base;
-//    enum_process(CharToWchar("frame.exe"), CharToWchar("ChatClient.dll"), processid, address_base);
-//    return 0;
-//}

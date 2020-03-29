@@ -1,5 +1,5 @@
 #pragma once
-//g++ -I "G:\boost_1_72_0" allinone.cpp -lwsock32 -lws2_32 -o allinone.exe --std=c++11
+
 #include <iostream>
 using namespace std;
 #include <boost/asio.hpp>

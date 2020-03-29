@@ -242,32 +242,3 @@ int *read(HANDLE &h, int base)
     cout << "why not cout" << endl;
     return array;
 }
-
-//int main()
-//{                                                          //四国军棋 -- 房间:百万雄师
-//    HWND h = ::FindWindow("ClientFrame_CMainFrame", NULL); //	  寻找并打开进程
-//    DWORD processid;
-//    GetWindowThreadProcessId(h, &processid);
-//    cout << processid << endl;
-//    HANDLE processh = 0;
-//    processh = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processid);
-//
-//    if (processh == 0)
-//    { //    对应处理
-//        printf("打开进程失败!\n");
-//        return 1;
-//    }
-//    else
-//    {
-//        printf("打开进程成功!\n");
-//        int base = init(0x03720000, processh);
-//        byte data = 1;
-//        WriteProcessMemory(processh,
-//                           (LPVOID)base, //要写入的起始地址
-//                           &data,        //写入的缓存区
-//                           1,            //要写入缓存区的大小
-//                           NULL);
-//        read(processh, base - 0x1 + 0xCCF);
-//    }
-//    return 0;
-//}
